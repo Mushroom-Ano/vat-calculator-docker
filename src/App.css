@@ -1,36 +1,43 @@
 body {
   padding: 20px;
-  background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* soft gradient */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* dark, cinematic gradient */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  color: #f0f0f0;
 }
 
+/* Centered field container */
 .field {
   width: 100%;
-  max-width: 400px;
-  padding-bottom: 20px;
+  max-width: 500px;
+  padding-bottom: 30px;
   margin: 0 auto;
 }
 
+/* Cool glassmorphism-style container */
 .colour-border {
-  border: 2px solid #1e3a8a; /* deep navy */
-  padding: 15px;
-  border-radius: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
+  border: 2px solid rgba(255, 255, 255, 0.15); /* subtle frosted border */
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05); /* translucent */
+  backdrop-filter: blur(12px); /* frosted glass effect */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .colour-border:hover {
-  transform: scale(1.02);
+  transform: scale(1.04);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
+/* Epic header with gradient and glow */
 .header {
-  padding: 15px;
-  background-color: #1e3a8a;
-  color: white;
-  border-radius: 8px 8px 0 0;
-  font-size: 1.2em;
+  padding: 18px;
+  background: linear-gradient(to right, #4f46e5, #3b82f6); /* electric blue */
+  color: #ffffff;
+  border-radius: 12px 12px 0 0;
+  font-size: 1.4em;
   font-weight: bold;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
