@@ -5,7 +5,7 @@ import '@testing-library/jest-dom';
 
 test('renders VAT Calculator text', () => {
   render(<App />);
-  const heading = screen.getByText(/VAT CALCULATOR/i);
+  const heading = screen.getByText(/ANO'S CRAZY AWESOME BONGUS VAT CALCULATOR/i);
   expect(heading).toBeInTheDocument();
 });
 
